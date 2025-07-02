@@ -15,13 +15,12 @@
 ## Installation instructions
 
 1. Clone the repository:
-git bash
 git clone https://github.com/Aysel2003/fastapi-todo-andersen.git
 cd fastapi-todo-andersen
-2. Create and activate a virtual environment:
+3. Create and activate a virtual environment:
 python -m venv venv
 source venv/Scripts/activate
-3. Install dependencies:
+4. Install dependencies:
 pip install -r requirements.txt
 
 ## API documentation 
@@ -48,6 +47,7 @@ The application has been **Dockerized** for easy deployment and environment cons
 ## Testing
 
 Unit tests have been created for each API endpoint using FastAPI's 'TestClient'. All tests are designed to validate successful outcomes and currently **pass successfully (8 passed)**.
+To run the unit tests inside a Docker container, use the following command: docker compose run web pytest
 
 ### Test Setup Requirements
 
@@ -58,7 +58,7 @@ Unit tests have been created for each API endpoint using FastAPI's 'TestClient'.
 
 - The application requires user authentication for protected endpoints.
 - Before running the tests, you need to **obtain a valid access token** by logging in.
-- Insert this token into the test file manually to avoid `403 Unauthorized` errors.
+- Insert this token into the test file manually to avoid `401 Unauthorized` errors.
 
 ### Owner-Restricted Endpoints
 
