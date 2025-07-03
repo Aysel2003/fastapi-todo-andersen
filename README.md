@@ -15,8 +15,8 @@
 ## Installation instructions
 
 1. Clone the repository:
-git clone https://github.com/Aysel2003/fastapi-todo-andersen.git
-cd fastapi-todo-andersen
+ *git clone https://github.com/Aysel2003/fastapi-todo-andersen.git
+ *cd fastapi-todo-andersen
 3. Create and activate a virtual environment:
 python -m venv venv
 source venv/Scripts/activate
