@@ -15,13 +15,9 @@
 ## Installation instructions
 
 1. Clone the repository:
-git clone https://github.com/Aysel2003/fastapi-todo-andersen.git
-cd fastapi-todo-andersen
-3. Create and activate a virtual environment:
-python -m venv venv
-source venv/Scripts/activate
-4. Install dependencies:
-pip install -r requirements.txt
+   1. git clone https://github.com/Aysel2003/fastapi-todo-andersen.git
+   2. cd fastapi-todo-andersen
+2. Build and run the application using Docker Compose: docker compose up --build
 
 ## API documentation 
 
