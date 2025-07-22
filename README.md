@@ -61,6 +61,15 @@ To run the unit tests inside a Docker container, use the following command: dock
 - Endpoints like `DELETE /tasks/{id}` and `PUT /tasks/{id}` are restricted to the **task owner**.
 - To ensure valid behavior, a test task is created under the current user (simulated with the token), so the test has permission to modify or delete it.
 
+### Project SetUp Improvements
+
+For the purpose of improving cross-platform compatibility and security, the following changes were made:
+- Docker Compose now runs both the app and the database
+The docker-compose.yml file was updated to include a db service using PostgreSQL. This ensures the entire infrastructure run together inside containers.
+- Removed hardcoded credentials from the connection URL
+Database credentials (username, password, database name) are no longer written directly in the code. Instead, they are stored in a .env file and loaded via environment variables.
+- Replaced platform-specific hostname (host.docker.internal) with db
+The hostname used for database connection is now db, which refers to the database service in Docker Compose. This makes the setup compatible across Linux, Windows, and macOS.
 
    
   
